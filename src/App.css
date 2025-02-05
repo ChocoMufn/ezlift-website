@@ -47,10 +47,62 @@ body {
   color: white;
 }
 
-/* Hero Section */
 .hero {
-  padding: 100px 20px;
+  position: relative;
+  width: 100%;
+  height: 90vh; /* Full screen height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white; /* Ensure text is visible */
+  overflow: hidden;
 }
+
+/* Background Video */
+.hero-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the video covers the entire section */
+  transform: translate(-50%, -50%);
+  z-index: -1; /* Push video behind content */
+}
+
+/* Content Overlay */
+.hero-content {
+  position: relative;
+  z-index: 1; /* Keep content above video */
+}
+
+/* Optional: Dark Overlay for Better Readability */
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6); /* 40% transparent black overlay */
+  z-index: 0;
+}
+/* 
+.cta-button {
+  margin-top: 16px;
+  padding: 12px 24px;
+  background-color: #007bff;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #0056b3;
+} */
+
 
 .hero h2 {
   font-size: 48px;
@@ -82,9 +134,62 @@ body {
 
 /* About Section */
 .about {
-  padding: 60px 20px;
-  background-color: #111;
+  text-align: center;
+  padding: 50px;
+  max-width: 1000px;
+  margin: 0 auto;
 }
+
+/* Card Layout */
+.about-cards {
+  display: flex;
+  gap: 20px;
+  justify-content: center; /* Centers the cards in a row */
+  flex-wrap: nowrap; /* Prevents wrapping onto a new row */
+  max-width: 100%; /* Ensures it doesn’t squeeze too much */
+}
+
+/* Individual Cards */
+.card {
+  background: #000000;
+  padding: 20px;
+  border-radius: 8px;
+  border-color: #FFFFFF;
+  width: 30%; /* Each card takes about a third of the row */
+  min-width: 300px; /* Prevents them from shrinking too much */
+  max-width: 400px; /* Avoids oversized cards */
+  text-align: center;
+  border: rgba(255, 255, 255, 0.2) 1px solid;
+  box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+  flex-grow: 1; /* Ensures all cards are the same width */
+}
+
+.card:hover {
+  border: rgba(255, 145, 77, 0.6) 1px solid;
+  box-shadow: 0 2px 4px rgba(255, 145, 77, 0.8);
+}
+
+
+.card h4 {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  color: rgba(255, 145, 77, 1);
+}
+
+/* Image Layout */
+.about-images {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.about-images img {
+  max-width: 600px;
+  height: auto;
+  border-radius: 8px;
+}
+
 
 .about h3 {
   font-size: 36px;
@@ -100,7 +205,7 @@ body {
 /* Meet the Team Section */
 .team {
   padding: 60px 20px;
-  background-color: #222;
+  background-color: #000;
 }
 
 .team h3 {
@@ -116,11 +221,17 @@ body {
 }
 
 .team-member {
-  background-color: #333;
+  background-color: #000;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border: rgba(255, 255, 255, 0.2) 1px solid;
+  box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
   max-width: 200px;
+}
+.team-member:hover {
+  border: rgba(255, 145, 77, 0.6) 1px solid;
+  box-shadow: 0 2px 4px rgba(255, 145, 77, 0.8);
+
 }
 
 .team-photo {
@@ -142,7 +253,7 @@ body {
 /* Update Log Section */
 .updates {
   padding: 60px 20px;
-  background-color: #111;
+  background-color: #000;
   text-align: center; /* Center the content within the updates section */
 }
 
