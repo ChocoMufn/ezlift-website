@@ -334,3 +334,13 @@ body {
   max-height: 90%;
   border-radius: 8px;
 }
+
+.team-member-link {
+  text-decoration: none; /* Remove underline */
+  color: inherit; /* Keep the original text color */
+  display: inline-block; /* Ensure it behaves like a block for styling */
+}
+
+.team-member-link:hover {
+  text-decoration: none; /* Prevent underline on hover */
+}
