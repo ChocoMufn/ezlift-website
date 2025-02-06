@@ -128,7 +128,7 @@ function App() {
       <UpdateLog />
 
       <footer className="footer">
-        © 2025 EZLift. All rights reserved.
+        2025 EZLift
       </footer>
     </div>
   );
