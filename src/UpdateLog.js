@@ -3,7 +3,12 @@ import './App.css';
 
 const updateLog = [
   { 
-    date: '2025-02-01', 
+    date: '2025-02-05', 
+    keyPoints: 'Website Update and Brochure', 
+    details: 'The website was updated with the latest project progress, including the team picture and construction updates. The UI was also revamped and is now hosted on vercel, instead of github pages. Elements for the team brochure have also been submitted.',
+  },
+  { 
+    date: '2025-02-04', 
     keyPoints: 'Team Picture', 
     details: 'Took the team picture in SSDC.',
     images: ['teampic.jpg']
