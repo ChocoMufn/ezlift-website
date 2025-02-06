@@ -118,7 +118,7 @@ function App() {
       <div className="team-member" style={{ backgroundColor: "black", color: "white" }}>
         <img src="/jg_ezl.png" alt="Jagroop Gill" className="team-photo" />
         <h4>Jagroop Gill</h4>
-        <p style={{ color: '#FF914D' }}><b>Mechanical, Project Management</b></p>
+        <p style={{ color: '#FF914D' }}><b>Mechanical, PM</b></p>
         <p>Jagroop provides Labot with the necessary appendages while keeping the team on track to achieve their goals.</p>
       </div>
     </a>
